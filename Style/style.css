@@ -115,11 +115,14 @@ body {
     font-weight: bold;
     color: #000;
     line-height: 70px;
+    animation: fadeInLeft 1s ease-in-out forwards;
+
 }
 
 .hero-content h1 span {
     font-family: 'Poppins-Medium';
     color: #00C7BE;
+    
 }
 
 .hero-content p {
@@ -129,6 +132,8 @@ body {
     margin-top: 10px;
     line-height: 1.7;
     margin: 40px 0px;
+    animation: fadeInLeft 1.2s ease-in-out forwards;
+
 }
 
 .buttons {
@@ -148,6 +153,8 @@ body {
     position: relative;
     box-shadow: 4px 4px 0px black;
     transition: all 0.2s ease-in-out;
+    animation: fadeInLeft 2s ease-in-out forwards;
+
 }
 
 .primary-btn:hover {
@@ -166,6 +173,8 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    animation: fadeInLeft 1.7s ease-in-out forwards;
+
 }
 
 .secondary-btn:hover {
@@ -178,6 +187,11 @@ body {
     background-image: no-repeat center;
     background-size: contain;
     margin-top: -8rem;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation: fadeInRight 2.2s ease-in-out forwards;
+
+    
 }
 
 .brand-logos {
@@ -194,6 +208,10 @@ body {
     gap: 120px;
     overflow: hidden;
     white-space: nowrap;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .logo-container img {
@@ -229,6 +247,12 @@ body {
     font-weight: bold;
     color: #000;
 }
+.text-makanan-kanan{
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 
 .text-makanan-kiri p {
     width: 75%;
@@ -239,6 +263,13 @@ body {
     color: #444;
     margin-top: 10px;
     line-height: 1.7;
+    
+}
+.text-makanan-kiri {
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .container {
@@ -249,6 +280,10 @@ body {
 
 .image-container {
     width: 55%;
+    animation: fadeInLeft linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .image-container img {
@@ -270,6 +305,10 @@ body {
     color: #30B0C7;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
 }
 
 .text-container h1 {
@@ -278,6 +317,10 @@ body {
     color: black;
     margin-bottom: 30px;
     line-height: 45px;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .text-container p {
@@ -287,6 +330,33 @@ body {
     color: #666;
     line-height: 2.5;
     margin-bottom: 30px;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+
+.primary-btn-makanan {
+    background-color: #30B0C7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: 4px 4px 0px black;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.primary-btn-makanan:hover {
+    background-color: #2480aa;
+    box-shadow: none;
 }
 
 .penyakit {
@@ -295,6 +365,7 @@ body {
     align-items: center;
     padding: 100px 110px;
     margin-top: 4rem;
+    margin-bottom: 10rem;
     background-color: #dcfaffbd;
     z-index: 0;
 }
@@ -352,10 +423,11 @@ body {
 }
 
 .olahraga {
+    background: url('../Images/background-aktivitas.svg') no-repeat center;
+    background-size: cover;
     width: 100%;
     align-items: center;
     padding: 0px 110px;   
-    margin-top: 10rem;
 }
 
 .olahraga-text h1 {
@@ -446,6 +518,140 @@ body {
     cursor: pointer;
     display: none;
 }
+
+footer {
+    width: 100%;
+    background-color: #30B0C7;
+    margin-top: 10rem;
+}
+
+.container-footer {
+    padding: 32px 110px 32px 110px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-footer {
+    color: white;
+    font-size: 25px;
+    font-family: 'Poppins-Medium';
+}
+
+.desk-footer {
+    font-family: 'Poppins-Light';
+    max-width: 448px;
+    margin: 0 auto;
+    margin-top: 16px;
+    color: white;
+    font-size: 15px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+    color: #30B0C7;
+}
+
+hr {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(70px);
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-70px);
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(70px);
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
 /* Mobile Responsive Navbar */
 @media only screen and (max-width: 575px){
     body{
